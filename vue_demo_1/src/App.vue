@@ -8,6 +8,8 @@
     </ul>
 
     <router-view></router-view>
+
+    <span class="title">123</span>
   </div>
 </template>
 
@@ -31,4 +33,15 @@ li {
   display: inline;
   margin-right: 10px;
 }
+
+.title{
+  font-size: 30px;
+  color: green;
+}
+</style>
+
+<style>
+  .content{
+    color:violet;
+  }
 </style>
