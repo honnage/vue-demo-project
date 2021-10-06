@@ -1,6 +1,8 @@
 <template>
   <div id="clock">
-    <slot></slot> : {{ time }}
+    <slot name="header"></slot>
+    <slot>Now</slot> : {{ time }}
+    <slot name="footer"></slot>
   </div>
 </template>
 
