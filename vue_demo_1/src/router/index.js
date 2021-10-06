@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Demo1 from '../views/Demo1_Intro.vue'
 import Demo2 from '../views/Demo2_EventMethod.vue'
 import Demo3 from '../views/Demo3_Data.vue'
+import Demo4 from '../views/Demo4_Binding.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,6 +27,11 @@ const routes = [
     path: '/demo3',
     name: 'demo3',
     component: Demo3
+  },
+  {
+    path: '/demo4',
+    name: 'demo4',
+    component: Demo4
   },
 ]
 
