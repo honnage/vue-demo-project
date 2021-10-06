@@ -10,7 +10,7 @@ export default {
   mounted() {
     setInterval(()=>{
        this.$emit("onClock", Date()) 
-    }, 100)
+    }, 1000)
   },
   props:[
       "title",

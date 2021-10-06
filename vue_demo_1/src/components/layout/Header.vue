@@ -7,6 +7,7 @@
       <li><router-link to="/demo3"><button> Demo3 Data </button></router-link></li>
       <li><router-link to="/demo4"><button> Demo4 Binding </button></router-link></li>
       <li><router-link to="/demo5"><button> Demo5 Form & v-model </button></router-link></li>
+      <li><router-link to="/demo6"><button> Demo6 Slot </button></router-link></li>
     </ul>
   </div>
 </template>
