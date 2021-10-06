@@ -2,21 +2,45 @@
   <div id="app">
     <Header />
     <router-view></router-view>
-    <Footer title="Copyright 2021 by Passakorn " color="blue"/>
+    <Footer
+      @onClock="onClock"
+      title="Copyright 2021 by Passakorn"
+      color="blue"
+    />
+    <span class="clock">{{ time }}</span>
   </div>
 </template>
 
 <script>
 import Header from "@/components/layout/Header.vue";
 import Footer from "@/components/layout/Footer.vue";
+import moment from "moment";
 
 export default {
   name: "app",
+  data() {
+    return {
+      time: ""
+    };
+  },
   components: {
     Header,
-    Footer,
+    Footer
+  },
+  methods: {
+    onClock(value) {
+      // this.time = value;
+      this.time = moment(value).format("MM/DD/YYYY hh:mm:ss");
+    }
   }
 };
 </script>
 
-<style></style>
+<style>
+.content {
+  color: violet;
+}
+.clock {
+  font-size: 12px;
+}
+</style>
