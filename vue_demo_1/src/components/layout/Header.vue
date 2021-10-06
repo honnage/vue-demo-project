@@ -26,11 +26,6 @@ li {
   display: inline;
   margin-right: 10px;
 }
-
-.title {
-  font-size: 30px;
-  color: green;
-}
 </style>
 
 <style>

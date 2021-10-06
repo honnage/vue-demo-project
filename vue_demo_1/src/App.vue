@@ -2,22 +2,21 @@
   <div id="app">
     <Header />
     <router-view></router-view>
-    <span class="title">123</span>
+    <Footer title="Copyright 2021 by Passakorn " color="blue"/>
   </div>
 </template>
 
 <script>
-import Header from "@/components/layout/Header.vue"
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
 
 export default {
   name: "app",
-  components:{
-    Header
+  components: {
+    Header,
+    Footer,
   }
-
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
