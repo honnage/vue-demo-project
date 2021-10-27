@@ -8,7 +8,8 @@
       <li><router-link to="/demo4"><button> Demo4 Binding </button></router-link></li>
       <li><router-link to="/demo5"><button> Demo5 Form & v-model </button></router-link></li>
       <li><router-link to="/demo6"><button> Demo6 Slot </button></router-link></li>
-      <li><router-link to="/demo7"><button> Demo6 Condition </button></router-link></li>
+      <li><router-link to="/demo7"><button> Demo7 Condition </button></router-link></li>
+      <li><router-link to="/demo8"><button> Demo8 Loop </button></router-link></li>
     </ul>
   </div>
 </template>
