@@ -11,6 +11,7 @@ import Demo7 from '../views/Demo7_Condition.vue'
 import Demo8 from '../views/Demo8_Loop.vue'
 import Demo9 from '../views/Demo9_LifeCycle.vue'
 import Demo10 from '../views/Demo10_Variable_and_State.vue'
+import Demo11 from '../views/Demo11_Ref.vue'
 
 Vue.use(VueRouter)
 
@@ -69,6 +70,11 @@ const routes = [
     path: '/demo10',
     name: 'demo10',
     component: Demo10
+  },
+  {
+    path: '/demo11',
+    name: 'demo11',
+    component: Demo11
   },
 ]
 

@@ -12,6 +12,7 @@
       <li><router-link to="/demo8"><button> Demo8 Loop </button></router-link></li>
       <li><router-link to="/demo9"><button> Demo9 LifeCycle </button></router-link></li>
       <li><router-link to="/demo10"><button> Demo10 Variable and State </button></router-link></li>
+      <li><router-link to="/demo11"><button> Demo10 Ref </button></router-link></li>
     </ul>
   </div>
 </template>
