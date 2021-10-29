@@ -10,6 +10,7 @@ import Demo6 from '../views/Demo6_Slot.vue'
 import Demo7 from '../views/Demo7_Condition.vue'
 import Demo8 from '../views/Demo8_Loop.vue'
 import Demo9 from '../views/Demo9_LifeCycle.vue'
+import Demo10 from '../views/Demo10_Variable_and_State.vue'
 
 Vue.use(VueRouter)
 
@@ -63,6 +64,11 @@ const routes = [
     path: '/demo9',
     name: 'demo9',
     component: Demo9
+  },
+  {
+    path: '/demo10',
+    name: 'demo10',
+    component: Demo10
   },
 ]
 

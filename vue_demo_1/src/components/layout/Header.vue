@@ -10,7 +10,8 @@
       <li><router-link to="/demo6"><button> Demo6 Slot </button></router-link></li>
       <li><router-link to="/demo7"><button> Demo7 Condition </button></router-link></li>
       <li><router-link to="/demo8"><button> Demo8 Loop </button></router-link></li>
-       <li><router-link to="/demo9"><button> Demo9 LifeCycle </button></router-link></li>
+      <li><router-link to="/demo9"><button> Demo9 LifeCycle </button></router-link></li>
+      <li><router-link to="/demo10"><button> Demo10 Variable and State </button></router-link></li>
     </ul>
   </div>
 </template>
