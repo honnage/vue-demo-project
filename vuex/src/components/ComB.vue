@@ -1,15 +1,15 @@
 <template>
-  <div id="comA">
+  <div id="comB">
     <h2>{{ $store.state.count }}</h2>
-    <button @click="add">Add</button>
+    <button @click="del">Del</button>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    add() {
-      this.$store.dispatch("addAction");
+    del() {
+      this.$store.dispatch("delAction");
     },
   },
 };
