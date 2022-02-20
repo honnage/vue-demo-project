@@ -1,6 +1,6 @@
 <template>
   <div id="comB">
-    <h2>{{ $store.state.count }}</h2>
+    <h2>{{ $store.getters.getCount }}</h2>
     <button @click="del">Del</button>
   </div>
 </template>

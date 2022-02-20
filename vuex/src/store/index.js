@@ -12,12 +12,17 @@ export default new Vuex.Store({
       state.count = value
     }
   },
+  getters:{
+    getCount(state){
+      return state.count
+    }
+  },
   actions: {
     addAction(context){
-      context.commit('setCount', this.state.count+1)
+      context.commit('setCount', this.getters.getCount+1)
     },
     delAction(context){
-      context.commit('setCount', this.state.count-1)
+      context.commit('setCount', this.getters.getCount-1)
     }
   },
   modules: {
