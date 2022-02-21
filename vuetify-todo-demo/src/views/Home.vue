@@ -1,40 +1,31 @@
 <template>
   <div class="home">
     <v-container>
-      <v-row>
-        <v-col col="10">
-          <v-text-field name="name" label="label" id="id" v-model="taskTextField"></v-text-field>
-        </v-col>
-
-        <v-col col="2">
-          <v-btn block color="success" @click="addTask">Add</v-btn>
-        </v-col>
-      </v-row>
-
+      <TodoAdd @onSibmit="addTask" />
       <TodoList :todos="todos" />
-
-      
     </v-container>
   </div>
 </template>
 
 <script>
-import TodoList from "@/components/TodoList.vue"
+import TodoList from "@/components/TodoList.vue";
+import TodoAdd from "@/components/TodoAdd.vue";
 export default {
   name: "Home",
 
   components: {
-    TodoList
+    TodoList,
+    TodoAdd,
   },
   methods: {
-    addTask(){
+    addTask(value) {
       this.todos.push({
         id: Math.random,
-        title: this.taskTextField,
-        components: false
-      })
-      this.taskTextField = ""
-    }
+        title: value,
+        components: false,
+      });
+      this.taskTextField = "";
+    },
   },
   data() {
     return {
